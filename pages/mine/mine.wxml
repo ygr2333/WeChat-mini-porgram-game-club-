@@ -1,0 +1,33 @@
+<view class="page">
+  <view class="user-card">
+    <view class="avatar">###</view>
+    <view class="user-info">
+      <view class="user-name">俱乐部会员</view>
+      <view class="user-id">欢迎进入个人中心</view>
+    </view>
+  </view>
+
+  <view class="group-title">常用功能</view>
+
+  <view class="action-list">
+    <view class="action-item" bindtap="goAction" data-name="我的订单">
+      <view class="action-name">我的订单</view>
+      <view class="action-arrow">›</view>
+    </view>
+
+    <view class="action-item" bindtap="goAction" data-name="我的收藏">
+      <view class="action-name">我的收藏</view>
+      <view class="action-arrow">›</view>
+    </view>
+
+    <view class="action-item" bindtap="goAction" data-name="联系客服">
+      <view class="action-name">联系客服</view>
+      <view class="action-arrow">›</view>
+    </view>
+
+    <view class="action-item" bindtap="goAction" data-name="设置">
+      <view class="action-name">设置</view>
+      <view class="action-arrow">›</view>
+    </view>
+  </view>
+</view>

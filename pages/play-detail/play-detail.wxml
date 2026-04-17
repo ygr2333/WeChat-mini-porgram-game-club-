@@ -1,0 +1,34 @@
+<view class="page" wx:if="{{detail}}">
+  <view class="detail-card">
+    <view class="top-area">
+      <image class="avatar" src="{{detail.avatar}}" mode="aspectFill"></image>
+
+      <view class="base-info">
+        <view class="name-row">
+          <view class="name">{{detail.name}}</view>
+          <view class="status {{detail.status === '忙碌' ? 'busy' : ''}}">{{detail.status}}</view>
+        </view>
+
+        <view class="game">{{detail.game}}</view>
+        <view class="price">￥{{detail.price}}/小时</view>
+      </view>
+    </view>
+
+    <view class="tag-list">
+      <block wx:for="{{detail.tags}}" wx:key="index">
+        <view class="tag-item">{{item}}</view>
+      </block>
+    </view>
+
+    <view class="desc">{{detail.desc}}</view>
+    <view class="content">{{detail.content}}</view>
+
+    <view class="action-btn" bindtap="contactPlayer">立即咨询</view>
+  </view>
+</view>
+
+<view class="page" wx:else>
+  <view class="state-wrap">
+    <view class="state-text">未找到陪玩内容</view>
+  </view>
+</view>

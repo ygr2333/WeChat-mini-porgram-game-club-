@@ -1,0 +1,25 @@
+<view class="page" wx:if="{{detail}}">
+  <view class="detail-card">
+    <image class="detail-image" src="{{detail.image}}" mode="aspectFill"></image>
+
+    <view class="detail-body">
+      <view class="detail-title">{{detail.name}}</view>
+
+      <view class="price-row">
+        <text class="price-now">￥{{detail.price}}</text>
+        <text class="price-old">￥{{detail.oldPrice}}</text>
+      </view>
+
+      <view class="detail-desc">{{detail.desc}}</view>
+      <view class="detail-content">{{detail.content}}</view>
+
+      <view class="action-btn" bindtap="contactService">咨询套餐</view>
+    </view>
+  </view>
+</view>
+
+<view class="page" wx:else>
+  <view class="state-wrap">
+    <view class="state-text">未找到套餐内容</view>
+  </view>
+</view>

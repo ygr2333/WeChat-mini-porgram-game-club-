@@ -1,0 +1,117 @@
+.page {
+  padding: 24rpx;
+}
+
+.detail-card {
+  background: #ffffff;
+  border-radius: 24rpx;
+  padding: 24rpx;
+}
+
+.top-area {
+  display: flex;
+  margin-bottom: 24rpx;
+}
+
+.avatar {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 20rpx;
+  margin-right: 20rpx;
+  flex-shrink: 0;
+}
+
+.base-info {
+  flex: 1;
+}
+
+.name-row {
+  display: flex;
+  align-items: center;
+  gap: 14rpx;
+  margin-bottom: 10rpx;
+}
+
+.name {
+  font-size: 34rpx;
+  font-weight: 700;
+  color: #222;
+}
+
+.status {
+  padding: 8rpx 18rpx;
+  border-radius: 999rpx;
+  background: #eafcf4;
+  color: #17b26a;
+  font-size: 22rpx;
+}
+
+.status.busy {
+  background: #fff4e5;
+  color: #f79009;
+}
+
+.game {
+  font-size: 26rpx;
+  color: #666;
+  margin-bottom: 12rpx;
+}
+
+.price {
+  font-size: 32rpx;
+  font-weight: 700;
+  color: #ff5a5f;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14rpx;
+  margin-bottom: 20rpx;
+}
+
+.tag-item {
+  padding: 10rpx 18rpx;
+  border-radius: 999rpx;
+  background: #eef4fb;
+  color: #3b82f6;
+  font-size: 22rpx;
+}
+
+.desc {
+  font-size: 28rpx;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 16rpx;
+}
+
+.content {
+  font-size: 27rpx;
+  color: #666;
+  line-height: 1.9;
+  margin-bottom: 28rpx;
+}
+
+.action-btn {
+  height: 84rpx;
+  border-radius: 18rpx;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: #ffffff;
+  font-size: 28rpx;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.state-wrap {
+  background: #ffffff;
+  border-radius: 24rpx;
+  padding: 70rpx 20rpx;
+  text-align: center;
+}
+
+.state-text {
+  font-size: 26rpx;
+  color: #999;
+}

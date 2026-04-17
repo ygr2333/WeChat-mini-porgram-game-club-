@@ -1,0 +1,24 @@
+<view class="page" wx:if="{{detail}}">
+  <view class="product-card">
+    <image class="product-image" src="{{detail.image}}" mode="aspectFill"></image>
+
+    <view class="product-info">
+      <view class="product-name">{{detail.name}}</view>
+
+      <view class="price-row">
+        <text class="price-now">￥{{detail.price}}</text>
+        <text class="price-old">￥{{detail.oldPrice}}</text>
+      </view>
+
+      <view class="product-desc">{{detail.desc}}</view>
+
+      <view class="contact-btn" bindtap="contactService">咨询商品</view>
+    </view>
+  </view>
+</view>
+
+<view class="page" wx:else>
+  <view class="state-wrap">
+    <view class="state-text">未找到商品内容</view>
+  </view>
+</view>

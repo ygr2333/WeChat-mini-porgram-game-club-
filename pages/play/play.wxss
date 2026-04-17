@@ -1,0 +1,93 @@
+.page {
+  padding: 24rpx;
+}
+
+.page-title {
+  font-size: 38rpx;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 24rpx;
+}
+
+.player-card {
+  background: #ffffff;
+  border-radius: 24rpx;
+  padding: 24rpx;
+  margin-bottom: 20rpx;
+}
+
+.player-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16rpx;
+}
+
+.player-name {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 6rpx;
+}
+
+.player-game {
+  font-size: 24rpx;
+  color: #888;
+}
+
+.player-status {
+  padding: 8rpx 18rpx;
+  border-radius: 999rpx;
+  background: #eafcf4;
+  color: #17b26a;
+  font-size: 22rpx;
+}
+
+.player-status.busy {
+  background: #fff4e5;
+  color: #f79009;
+}
+
+.player-desc {
+  font-size: 26rpx;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 20rpx;
+}
+
+.player-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player-price {
+  font-size: 30rpx;
+  font-weight: 700;
+  color: #ff5a5f;
+}
+
+.player-btn {
+  padding: 16rpx 24rpx;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: #ffffff;
+  border-radius: 18rpx;
+  font-size: 24rpx;
+}
+
+.state-wrap {
+  background: #ffffff;
+  border-radius: 24rpx;
+  padding: 70rpx 20rpx;
+  text-align: center;
+}
+
+.state-text {
+  font-size: 26rpx;
+  color: #999;
+}
+.player-link {
+  margin-top: 18rpx;
+  font-size: 24rpx;
+  color: #3b82f6;
+}

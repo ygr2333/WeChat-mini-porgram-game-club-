@@ -1,0 +1,36 @@
+<view class="page">
+  <view class="page-title">实时陪玩</view>
+
+  <view wx:if="{{loading}}" class="state-wrap">
+    <view class="state-text">加载中...</view>
+  </view>
+
+  <block wx:elif="{{list.length > 0}}">
+    <block wx:for="{{list}}" wx:key="id">
+      <view class="player-card" bindtap="goDetail" data-id="{{item.id}}">
+        <view class="player-top">
+          <view>
+            <view class="player-name">{{item.name}}</view>
+            <view class="player-game">{{item.game}}</view>
+          </view>
+          <view class="player-status {{item.status === '忙碌' ? 'busy' : ''}}">{{item.status}}</view>
+        </view>
+
+        <view class="player-desc">{{item.desc}}</view>
+
+        <view class="player-bottom">
+          <view class="player-price">￥{{item.price}}/小时</view>
+          <view class="player-btn" bindtap="contactPlayer" catchtap="contactPlayer" data-name="{{item.name}}">
+            立即咨询
+          </view>
+        </view>
+
+        <view class="player-link">查看详情 ></view>
+      </view>
+    </block>
+  </block>
+
+  <view wx:else class="state-wrap">
+    <view class="state-text">暂无陪玩信息</view>
+  </view>
+</view>

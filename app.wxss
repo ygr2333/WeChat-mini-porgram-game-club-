@@ -1,0 +1,15 @@
+page {
+  background: #f6f7fb;
+  color: #222;
+  font-size: 28rpx;
+  box-sizing: border-box;
+}
+
+view,
+text,
+image,
+swiper,
+swiper-item,
+input {
+  box-sizing: border-box;
+}

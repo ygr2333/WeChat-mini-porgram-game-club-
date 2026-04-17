@@ -1,0 +1,67 @@
+<view class="page">
+  <view class="header">
+    <view class="header-title">###俱乐部</view>
+  </view>
+
+  <view class="search-wrap">
+    <view class="search-box">
+      <text class="search-icon">⌕</text>
+      <input
+        class="search-input"
+        placeholder="请输入商品名称"
+        placeholder-class="search-placeholder"
+        value="{{keyword}}"
+        bindinput="onKeywordInput"
+        confirm-type="search"
+        bindconfirm="onSearch"
+      />
+    </view>
+    <view class="search-btn" bindtap="onSearch">搜索</view>
+  </view>
+
+  <swiper class="banner-swiper" indicator-dots autoplay interval="3000" circular>
+    <block wx:for="{{banners}}" wx:key="id">
+      <swiper-item>
+        <image class="banner-image" src="{{item.image}}" mode="aspectFill"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="notice-bar">
+    <view class="notice-icon">🔊</view>
+    <view class="notice-text">###俱乐部欢迎各位用户进入体验，最新公告与活动请关注页面信息。</view>
+  </view>
+
+  <view class="menu-section">
+    <block wx:for="{{menus}}" wx:key="id">
+      <view class="menu-item" bindtap="onMenuTap" data-name="{{item.name}}">
+        <view class="menu-icon">{{item.icon}}</view>
+        <view class="menu-name">{{item.name}}</view>
+      </view>
+    </block>
+  </view>
+
+  <view class="section-header" id="product-section">
+    <view class="section-title">全部商品</view>
+  </view>
+
+  <block wx:if="{{filteredProducts.length > 0}}">
+    <view class="product-list">
+      <block wx:for="{{filteredProducts}}" wx:key="id">
+        <view class="product-card" bindtap="onProductTap" data-id="{{item.id}}">
+          <image class="product-image" src="{{item.image}}" mode="aspectFill"></image>
+          <view class="product-name">{{item.name}}</view>
+          <view class="product-meta">销量 0　浏览 0</view>
+          <view class="product-price-row">
+            <text class="product-price">￥{{item.price}}</text>
+            <text class="product-old-price">￥{{item.oldPrice}}</text>
+          </view>
+        </view>
+      </block>
+    </view>
+  </block>
+
+  <view wx:else class="empty-wrap">
+    <view class="empty-text">没有找到相关商品</view>
+  </view>
+</view>

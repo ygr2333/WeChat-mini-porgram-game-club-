@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/notice/notice",
+    "pages/notice-detail/notice-detail",
+    "pages/combo/combo",
+    "pages/combo-detail/combo-detail",
+    "pages/play/play",
+    "pages/play-detail/play-detail",
+    "pages/product-detail/product-detail",
+    "pages/mine/mine"
+  ],
+  "window": {
+    "navigationBarTitleText": "###俱乐部",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#3b82f6",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/tabbar/首页.png",
+        "selectedIconPath": "assets/tabbar/首页.png"
+      },
+      {
+        "pagePath": "pages/notice/notice",
+        "text": "公告",
+        "iconPath": "assets/tabbar/公告.png",
+        "selectedIconPath": "assets/tabbar/公告.png"
+      },
+      {
+        "pagePath": "pages/combo/combo",
+        "text": "套餐",
+        "iconPath": "assets/tabbar/套餐.png",
+        "selectedIconPath": "assets/tabbar/套餐.png"
+      },
+      {
+        "pagePath": "pages/play/play",
+        "text": "陪玩",
+        "iconPath": "assets/tabbar/游戏.png",
+        "selectedIconPath": "assets/tabbar/游戏.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "assets/tabbar/我的.png",
+        "selectedIconPath": "assets/tabbar/我的.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
